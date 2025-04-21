@@ -8,6 +8,7 @@ import TextParallax from '@/components/TextParallax';
 import Title from '@/components/Title';
 import ZoomParallax from '@/components/ZoomParallax';
 import SmoothScrollParallax from '@/components/SmoothParallaxScroll';
+import Lista from '@/components/Lista';
 export default function Home() {
 
   useEffect( () => {
@@ -25,12 +26,13 @@ export default function Home() {
     <main>
       {/* <Title /> */}
       <Intro />
-      {/* <Description /> */}
+      <Description />
       <Section />
       {/* <div className='h-screen'></div> */}
       <SmoothScrollParallax />
-      <ZoomParallax />
-      <TextParallax />
+      <Lista />
+      {/* <ZoomParallax />
+      <TextParallax /> */}
       {/*text clip mask on scroll*/}
     </main>
   );

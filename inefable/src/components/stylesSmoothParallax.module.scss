@@ -1,5 +1,52 @@
-.gallery {
-    height: auto; /* Ajusta automáticamente según el contenido */
+.gallery{
+    height: 175vh;
+    background: rgb(45, 45, 45);
+    position: relative;
+    display: flex;
+    gap: 2vw;
+    padding: 2vw;
+    box-sizing: border-box;
+    overflow: hidden;
+    .column{
+        position: relative;
+        height: 100%;
+        width: 25%;
+        min-width: 250px;
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+        .imageContainer{
+            height: 100%;
+            width: 100%;
+            position: relative;
+            border-radius: 1vw;
+            overflow: hidden;
+            img{
+                object-fit: cover;
+            }
+        }
+        &:nth-of-type(1){
+            top: -45%;
+        }
+        &:nth-of-type(2){
+            top: -95%;
+        }
+        &:nth-of-type(3){
+            top: -45%;
+        }
+        &:nth-of-type(4){
+            top: -75%;
+        }
+    }
+}
+.spacer{
+    height: 5vh;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .gallery {
+        height: 175vh; /* Ajusta automáticamente según el contenido */
     min-height: 100vh; /* Asegura que tenga al menos el tamaño de la pantalla */
     background: rgb(45, 45, 45);
     position: relative;
@@ -9,54 +56,14 @@
     box-sizing: border-box;
     overflow: hidden;
 
-    .column {
-        position: relative;
-        height: 100%;
-        width: 25%;
-        min-width: 250px;
-        display: flex;
-        flex-direction: column;
-        gap: 2vw;
-
-        .imageContainer {
-            height: 100%;
-            width: 100%;
-            position: relative;
-            border-radius: 1vw;
-            overflow: hidden;
-
-            img {
-                object-fit: cover;
-            }
-        }
-
-        &:nth-of-type(1) {
-            top: -45%;
-        }
-        &:nth-of-type(2) {
-            top: -95%;
-        }
-        &:nth-of-type(3) {
-            top: -45%;
-        }
-        &:nth-of-type(4) {
-            top: -75%;
-        }
-    }
-}
-
-/* Media Query for Mobile Devices */
-@media (max-width: 768px) {
-    .gallery {
-        height: auto; /* Ajusta automáticamente según el contenido */
-        min-height: 100vh;
-        gap: 1vw;
-        padding: 1vw;
-
         .column {
-            width: 50%;
-            min-width: 150px;
-            gap: 1vw;
+            position: relative;
+            height: 100%;
+            width: 25%;
+            min-width: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 2vw;
 
             .imageContainer {
                 border-radius: 2vw;
@@ -81,25 +88,46 @@
 /* Media Query for Very Small Devices (e.g., phones) */
 @media (max-width: 480px) {
     .gallery {
-        height: auto;
-        min-height: 100vh;
+        height: 175vh; /* Ajusta automáticamente según el contenido */
+    min-height: 100vh; /* Asegura que tenga al menos el tamaño de la pantalla */
+    background: rgb(45, 45, 45);
+    position: relative;
+    display: flex;
+    gap: 2vw;
+    padding: 2vw;
+    box-sizing: border-box;
+    overflow: hidden;
+
+        .column {
+            position: relative;
+        height: 100%;
+        width: 25%;
+        min-width: 20px;
+        display: flex;
         flex-direction: column;
         gap: 2vw;
 
-        .column {
-            width: 100%;
-            min-width: unset;
-            gap: 2vw;
-
-            .imageContainer {
-                border-radius: 3vw;
+            .imageContainer {height: 100%;
+                width: 100%;
+                position: relative;
+                border-radius: 1vw;
+                overflow: hidden;
+                img{
+                    object-fit: cover;
+                }border-radius: 3vw;
             }
 
-            &:nth-of-type(1),
-            &:nth-of-type(2),
-            &:nth-of-type(3),
-            &:nth-of-type(4) {
-                top: 0;
+            &:nth-of-type(1){
+                top: -45%;
+            }
+            &:nth-of-type(2){
+                top: -95%;
+            }
+            &:nth-of-type(3){
+                top: -45%;
+            }
+            &:nth-of-type(4){
+                top: -75%;
             }
         }
     }
