@@ -7,9 +7,9 @@ export default function Description() {
 
     return (
         <div className='flex justify-center my-40'>
-            <p className='text-[5.5vw] uppercase text-left max-w-[50vw] leading-none'>
+            <div className='text-[3.3vw] lg:text-[5.5vw] uppercase text-left max-w-[50vw] leading-none'>
                 <Paragraph paragraph={phrase} />
-            </p>
+            </div>
         </div>
     )
 }
