@@ -2,39 +2,39 @@ import gsap from 'gsap';
 
 const projects = [
     {
-      title: "New York",
+      title: "Amormío",
       color: "#F06318"
     },
     {
-      title: "San Francisco",
+      title: "Emptiness",
       color: "#DCF018"
     },
     {
-      title: "San Antonio",
+      title: "18 años",
       color: "#18F0E8"
     },
     {
-      title: "Nashville",
+      title: "TE AMO",
       color: "#8C0CF0"
     },
     {
-      title: "Houston",
+      title: "PRISCILLA",
       color: "#F0183C"
     },
     {
-      title: "New Orleans",
+      title: "More than friends",
       color: "#F0BA18"
     },
     {
-      title: "Oklahoma City",
+      title: "Passion",
       color: "#0C34F0"
     },
     {
-      title: "Detroit",
+      title: "Saudade",
       color: "#0CBCF0"
     },
     {
-      title: "Indianapolis",
+      title: "You deserve",
       color: "#91F018"
     }
 ];
