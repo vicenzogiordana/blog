@@ -61,7 +61,7 @@ export default function Lista() {
                     onMouseLeave={(e) => manageMouseLeave(e, index)}
                     className="relative mb-[-2vw] bg-white border-t border-black cursor-pointer"
                   >
-                    <p className="m-0 text-[5vw] text-black pl-2 uppercase pointer-events-none">
+                    <p className="m-0 text-[10vw] lg:text-[5vw] text-black pl-2 uppercase pointer-events-none">
                       {project.title}
                     </p>
                   </div>
