@@ -1,6 +1,6 @@
 'use client'
 import styles from './stylesZoomParallax.module.scss';
-import Picture1 from '../../public/images/7.jpg';
+import Picture1 from '../../public/images/7.jpeg';
 import Picture2 from '../../public/images/8.jpg';
 import Picture3 from '../../public/images/9.jpg';
 import Picture4 from '../../public/images/3.jpg'
