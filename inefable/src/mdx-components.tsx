@@ -12,7 +12,7 @@ const geistMono = Merriweather({
 export function useMDXComponents(components: MDXComponents): MDXComponents {
 return {
     p: ({ children }) => (
-            <p className={`${geistMono.className} antialiased`}>{children}</p>
+            <p className={`${geistMono.className} antialiased mb-1 text-base/7 indent-8`}>{children}</p>
         ),
     ...components,
 }
