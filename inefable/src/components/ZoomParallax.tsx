@@ -1,3 +1,4 @@
+'use client'
 import styles from './stylesZoomParallax.module.scss';
 import Picture1 from '../../public/images/7.jpeg';
 import Picture2 from '../../public/images/8.jpg';
@@ -5,12 +6,12 @@ import Picture3 from '../../public/images/9.jpg';
 import Picture4 from '../../public/images/3.jpg'
 import Picture5 from '../../public/images/5.jpg'
 import Picture6 from '../../public/images/6.jpg'
-import Picture7 from '../../public/images/6.jpg'
+import Picture7 from '../../public/images/1.jpg'
 import Image from 'next/image';
 import { useScroll, useTransform, motion} from 'framer-motion';
 import { useRef } from 'react';
 
-export default function Index() {
+export default function ZoomParallax() {
     
     const container = useRef(null);
     const { scrollYProgress } = useScroll({
