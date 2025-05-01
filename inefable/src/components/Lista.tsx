@@ -50,11 +50,11 @@ const projects = [
 
 export default function Lista() {
 
-  const manageMouseEnter = (e: React.MouseEvent<HTMLAnchorElement>, index: number) => {
+  const manageMouseEnter = (e: React.MouseEvent<HTMLDivElement>, index: number) => {
     gsap.to(e.target, {top: "-2vw", backgroundColor: projects[index].color, duration: 0.3});
   };
 
-  const manageMouseLeave = (e: React.MouseEvent<HTMLAnchorElement>, index: number) => {
+  const manageMouseLeave = (e: React.MouseEvent<HTMLDivElement>, index: number) => {
     gsap.to(e.target, {top: "0", backgroundColor: "white", duration: 0.3, delay: 0.1});
   };
 
@@ -64,18 +64,17 @@ export default function Lista() {
             {
               projects.map((project, index) => {
                 return (
-                  <a
-                    href={`/posts/${project.href}`}
+                  <a href={`/posts/${project.href}`} key={index}>
+                  <div
                     key={index}
                     onMouseEnter={(e) => manageMouseEnter(e, index)}
                     onMouseLeave={(e) => manageMouseLeave(e, index)}
-                    className="relative block mb-[-2vw] bg-white border-t border-black cursor-pointer"
+                    className="relative mb-[-2vw] bg-white border-t border-black cursor-pointer"
                   >
-                    <div className="relative">
-                      <p className="m-0 text-[10vw] lg:text-[5vw] text-black pl-2 uppercase">
-                        {project.title}
-                      </p>
-                    </div>
+                    <p className="m-0 text-[10vw] lg:text-[5vw] text-black pl-2 uppercase pointer-events-none">
+                      {project.title}
+                    </p>
+                  </div>
                   </a>
                 );
               })
